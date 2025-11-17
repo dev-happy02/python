@@ -4,7 +4,7 @@ print(text)
 # 1. lower() - convert to lowercase
 print(text.lower())
 
- 
+  
 # 2. upper() - convert to uppercase
 print(text.upper())
 

@@ -211,7 +211,7 @@ print (name[:5])
 print (name[2:4]) 
 ```
 
-
+#### string funtions 
 ```py
 
 text = "  Hello World Welcome to Python  "
@@ -236,6 +236,157 @@ print(text.startswith("  Hello"))
 print(text.endswith("on"))
 print("HeLLo".swapcase())
 ```
+
+```py
+
+text = "  Hello World Welcome to Python  "
+print(text)
+
+# 1. lower() - convert to lowercase
+print(text.lower())
+
+  
+# 2. upper() - convert to uppercase
+print(text.upper())
+
+
+# 3. title() - first letter capital of each word
+print(text.title())
+
+
+# 4. capitalize() - first letter capital
+print(text.capitalize())
+
+
+# 5. strip() - remove spaces from both sides
+print(text.strip())
+
+
+# 6. lstrip() - remove left spaces
+print(text.lstrip())
+
+
+# 7. rstrip() - remove right spaces
+print(text.rstrip())
+
+
+# 8. replace() - replace words
+print(text.replace("Python", "Programming"))
+
+
+# 9. split() - convert string to list
+print(text.split())
+
+
+# 10. join() - join list into string
+words = ["Python", "is", "fun"]
+print(" ".join(words))
+
+
+# 11. find() - return index of substring
+print(text.find("World"))
+
+
+# 12. count() - count occurrences
+print(text.count("o"))
+
+
+# 13. startswith()
+print(text.startswith("  Hello"))
+
+
+# 14. endswith()
+print(text.endswith("on"))
+
+
+# 15. swapcase() - change upper <-> lower
+print("HeLLo".swapcase())
+```
+
+
+#### escape
+
+```py
+a = "hii my name is \n Happy Swaraj"
+
+print(a)
+
+
+b = "hii my name is \"Happy Swaraj\""
+print(b)
+
+
+
+c = "hii my name is \t Happy Swaraj "
+print(c)
+```
+
+### list and tuples
+#### list 
+```py
+
+a = ["happy", 3245, "apple", 34.76, False]
+
+print(a)
+
+a[0]= "swaraj" 
+print(a)
+
+print(a[4])  # print -> False
+print(a[2:4])  # print -> apple, 34.76
+```
+
+
+
+#### list methods
+```py
+
+a = ["happy", 3245, "apple", 34.76, False]
+print(a)
+ 
+a.append("swaraj")
+print(a)
+
+
+numbers = [23, 4, 5, 87, 11, 34]
+print("Original:", numbers)
+
+# 1. insert() – add element at given index
+numbers.insert(1, 15)
+print("1. insert():", numbers)
+
+# 2. remove() – removes first occurrence
+numbers.remove(5)
+print("2. remove():", numbers)
+
+# 3. pop() – remove element (default last)
+numbers.pop()
+print("3. pop():", numbers)
+
+# 4. sort() – sort list ascending
+numbers.sort()
+print("4. sort():", numbers)
+
+# 5. reverse() – reverse list
+numbers.reverse()
+print("5. reverse():", numbers)
+
+# 6. count() – count occurrences
+print("6. count(5):", numbers.count(5))
+
+# 7. index() – get index of element
+# (10 is not in list, so using element 15)
+print("7. index(15):", numbers.index(15))
+
+# 8. extend() – add multiple elements
+numbers.extend([50, 60])
+print("8. extend():", numbers)
+
+# 9. clear() – remove all elements
+numbers.clear()
+print("9. clear():", numbers)
+```
+
 
 
 
